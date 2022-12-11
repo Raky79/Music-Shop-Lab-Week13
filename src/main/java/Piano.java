@@ -1,4 +1,5 @@
 import behaviours.IPlay;
+import behaviours.ISell;
 
 public class Piano extends Instrument implements IPlay {
 
@@ -22,4 +23,8 @@ public class Piano extends Instrument implements IPlay {
     public String playInstrument(String data) {
         return this.play(data);
     }
+
+//    public void calculateMarkup(double profit) {
+//       this.getPriceSold() -= this.getPriceBought();
+//    }
 }

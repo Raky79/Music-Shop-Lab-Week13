@@ -48,4 +48,10 @@ public class PianoTest {
     public void pianoIsBeingPlayed() {
         assertEquals("And the piano goes: ping, ping", piano.playInstrument("ping, ping"));
     }
+
+    @Test
+    public void pianoSaleHasMarkup() {
+        assertEquals(2000.0, piano.calculateMarkup(2000.0), 0.0);
+    }
+
 }

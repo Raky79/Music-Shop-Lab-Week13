@@ -21,4 +21,5 @@ public class Guitar extends Instrument implements IPlay {
     public String playInstrument(String data) {
         return this.play(data);
     }
+
 }

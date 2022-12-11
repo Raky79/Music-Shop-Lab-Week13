@@ -49,6 +49,11 @@ public class GuitarTest {
         assertEquals("And the guitar goes: a-woogah woogah", guitar.playInstrument("a-woogah woogah"));
     }
 
+    @Test
+    public void guitarSaleHasMarkup() {
+        assertEquals(100.0, guitar.calculateMarkup(100.0), 0.0);
+    }
+
 
 
 

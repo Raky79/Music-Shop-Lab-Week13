@@ -1,4 +1,6 @@
-public abstract class Item {
+import behaviours.ISell;
+
+public abstract class Item implements ISell {
 
     private String name;
 
@@ -22,5 +24,10 @@ public abstract class Item {
 
     public double getPriceSold() {
         return priceSold;
+    }
+
+    public double calculateMarkup(double profit) {
+        this.priceSold -= this.priceBought;
+        return profit;
     }
 }
