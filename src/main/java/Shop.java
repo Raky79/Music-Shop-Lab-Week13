@@ -29,4 +29,5 @@ public class Shop {
     public void removeItemFromStock(ISell item) {
         stock.remove(item);
     }
+
 }

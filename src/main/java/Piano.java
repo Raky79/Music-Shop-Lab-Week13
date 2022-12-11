@@ -24,7 +24,4 @@ public class Piano extends Instrument implements IPlay {
         return this.play(data);
     }
 
-//    public void calculateMarkup(double profit) {
-//       this.getPriceSold() -= this.getPriceBought();
-//    }
 }
