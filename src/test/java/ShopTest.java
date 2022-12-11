@@ -25,5 +25,21 @@ public class ShopTest {
         assertEquals("Coding Music", shop.getName());
     }
 
+    @Test
+    public void shopCanAddItemToStock() {
+        shop.addItemToStock(guitar);
+        shop.addItemToStock(strings);
+        assertEquals(2, shop.stockCount());
+    }
+
+    @Test
+    public void shopCanRemoveItemFromStock() {
+        shop.addItemToStock(guitar);
+        shop.addItemToStock(strings);
+        shop.addItemToStock(strings);
+        shop.removeItemFromStock(guitar);
+        assertEquals(2, shop.stockCount());
+    }
+
 
 }
